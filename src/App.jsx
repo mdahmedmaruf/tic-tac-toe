@@ -35,9 +35,9 @@ export default function App() {
     }
     return (
         <>
-            <h1 className='text-3xl text-center mb-4'>Tic Tac Toe</h1>
+            <h1 className='text-3xl text-center my-4'>Tic Tac Toe</h1>
             <div className='text-center mb-4'>{status}</div>
-            <div className='flex'>
+            <div className='flex justify-center'>
                 <Square
                     value={squares[0]}
                     onSquareClick={() => handleSquareClick(0)}
@@ -51,7 +51,7 @@ export default function App() {
                     onSquareClick={() => handleSquareClick(2)}
                 />
             </div>
-            <div className='flex'>
+            <div className='flex justify-center'>
                 <Square
                     value={squares[3]}
                     onSquareClick={() => handleSquareClick(3)}
@@ -65,7 +65,7 @@ export default function App() {
                     onSquareClick={() => handleSquareClick(5)}
                 />
             </div>
-            <div className='flex'>
+            <div className='flex justify-center'>
                 <Square
                     value={squares[6]}
                     onSquareClick={() => handleSquareClick(6)}
